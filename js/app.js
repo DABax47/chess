@@ -1,6 +1,5 @@
 window.onload = () => {
   window.addEventListener('resize', () => {
-    console.log('resize');
     moveImgs();
   });
 
@@ -9,7 +8,7 @@ window.onload = () => {
 }
 
 function moveImgs() {
-  console.log('hello');
+
   if (window.innerWidth > 768) {
     let pos = document.documentElement;
     let queen = document.getElementById('q');
@@ -29,5 +28,5 @@ function moveImgs() {
       queen.style.setProperty('left', (60 + (e.clientX / 4000)) + 'em');
       f.style.setProperty('left', ((33 * -1) + (e.clientX / 125)) + 'em');
     });
-  }
+  };
 };
