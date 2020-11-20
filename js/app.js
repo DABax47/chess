@@ -3,11 +3,13 @@ window.onload = () => {
     console.log('resize');
     moveImgs();
   });
+
   moveImgs();
 
 }
 
 function moveImgs() {
+  console.log('hello');
   if (window.innerWidth > 768) {
     let pos = document.documentElement;
     let queen = document.getElementById('q');
@@ -23,9 +25,9 @@ function moveImgs() {
     }
 
     pos.addEventListener("mousemove", e => {
-      console.log('moving');
-      pos.style.setProperty('--x', e.clientX + "px")
+      pos.style.setProperty('--x', e.clientX + "px");
       queen.style.setProperty('left', (60 + (e.clientX / 4000)) + 'em');
       f.style.setProperty('left', ((33 * -1) + (e.clientX / 125)) + 'em');
-    })
+    });
   }
+};
