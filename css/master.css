@@ -1,0 +1,152 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    width: 90vw;
+    margin-left: 5%;
+    background: radial-gradient(24.06% 34.23% at 74.06% 65.77%, #FFFFFF 0%, #D6D6D6 100%);
+  }
+
+  #navigation {
+    width: 100%;
+  }
+
+  nav {
+    height: 5.45%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo, ul {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  .logo h2 {
+    font-size: 25px;
+    line-height: 37px;
+    padding: 0px 5px;
+  }
+
+  .logo svg {
+    height: 100%;
+    width: 10%;
+  }
+
+  ul, .signup {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .lg {
+    display: none;
+  }
+
+  .sign-up {
+    background: linear-gradient(90deg, rgba(37, 97, 188, 0.61) 32.81%, rgba(177, 72, 27, 0.5307) 96.88%);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: white;
+  }
+
+  img {
+    position: absolute;
+    z-index: -100;
+  }
+
+  .frontimg {
+    width: 88.74%;
+    height: 88.57%;
+    top: -36.80%;
+    left: -36.66%;
+  }
+
+  .queen {
+    width: 10.125%;
+    height: 20.20%;
+    top: 45.36%;
+    left: 75%
+  }
+
+  #content {
+    background-image: url(../img/text.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 75%;
+  }
+
+  /* when screen is 600 or larger */
+  @media only screen and (min-width:708px) {
+    nav {
+      height: 5.45%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo, ul {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      color: #000000;
+    }
+
+    ul {
+      width: 25%;
+      list-style: none;
+      justify-content: space-between;
+    }
+
+    .lg {
+      display: inline-block;
+    }
+
+    #content {
+      background-image: url(../img/text.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 75%;
+      margin-top: 50px
+    }
+
+    .frontimg {
+      width: 88.74%;
+      height: 88.57%;
+      top: -36.80%;
+      left: -36.66%;
+    }
+
+    .queen {
+      width: 8em;
+      height: 18.125em;
+    }
+  }
