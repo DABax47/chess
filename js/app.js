@@ -1,10 +1,10 @@
 window.onload = () => {
   window.addEventListener('resize', () => {
-      console.log('resize');
-      moveImgs();
-    }
+    console.log('resize');
     moveImgs();
-  })
+  });
+  moveImgs();
+
 }
 
 function moveImgs() {
